@@ -1,0 +1,14 @@
+.card-actions {
+    opacity: 0;
+    transition: opacity ease 400ms;
+}
+
+.sidebar-product-card:hover .card-actions {
+    opacity: 1;
+}
+
+@media (hover: none) {
+    .card-actions {
+        opacity: 1;
+    }
+}

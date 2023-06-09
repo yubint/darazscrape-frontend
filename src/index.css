@@ -14,27 +14,21 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  min-height: 100vh;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 button {
   border-radius: 8px;
@@ -47,22 +41,85 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#brand-name {
+  flex-basis: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#home {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+#home-main {
+  flex-basis: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#sidebar {
+  flex-basis: 30%;
+}
+
+.sidebar-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sidebar-product-title {
+  flex-basis: 70%;
+  box-sizing: border-box;
+  padding: 2rem;
+  word-wrap: break-word;
+}
+
+.sidebar-image-container {
+  flex-basis: 30%;
+}
+
+.sidebar-image {
+  width: 100%;
+  object-fit: contain;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
